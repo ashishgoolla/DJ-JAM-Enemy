@@ -3,8 +3,10 @@
 #include "enemy.h"
 
 enemy::enemy(){
+
     //Save the enemy preferences to a text file so the textures are the same when re-running the program
     std::ifstream applyEnemyModel;
+    
     //Apply whatever model is saved in the text file (normal colors by default)
     applyEnemyModel.open("../cmake_modules/Local_Game_Data/FlamingSkullModel.txt");
     std::string flamingSkullSelect;
